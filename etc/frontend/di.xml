@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Areeb Khan
+ * @copyright Copyright (c) 2024 besomi (https://github.com/khanareeb17)
+ * @package Aakhan CheckoutValidations
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Checkout\Block\Checkout\LayoutProcessor">
+        <plugin name="validate_telephone_zipcode_checkout_layoutprocessor" 
+                type="Aakhan\CheckoutValidations\Plugin\LayoutProcessor" sortOrder="10"/>
+    </type>
+</config>
